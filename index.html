@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Notícias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="container topo-conteudo">
+    <a class="logo" href="index.html">Portal Notícias</a>
+    <div class="acoes"><a href="login.html">Entrar</a><a href="cadastro.html">Cadastrar</a></div>
+  </div>
+</header>
+<nav class="menu"><div class="container menu-conteudo">
+  <a href="#" data-category="Todas">Início</a><a href="#" data-category="Brasil">Brasil</a>
+  <a href="#" data-category="Mundo">Mundo</a><a href="#" data-category="Tecnologia">Tecnologia</a>
+  <a href="#" data-category="Esportes">Esportes</a>
+</div></nav>
+<main class="container">
+  <section class="intro"><h1>Últimas notícias</h1><p>Informação e acontecimentos em destaque.</p></section>
+  <div class="search"><input id="search" placeholder="Pesquisar notícia..." aria-label="Pesquisar notícia"></div>
+  <p id="status" class="status"></p>
+  <section id="news" class="news-grid"></section>
+</main>
+<footer>© 2026 Portal Notícias · Projeto acadêmico</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
